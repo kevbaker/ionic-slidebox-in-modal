@@ -20,6 +20,8 @@ angular.module('ionicApp', ['ionic'])
 
     $scope.newUser = {};
 
+    $scope.contentSlide1 = "This is some example content for slide 1.";
+
     $scope.nextSlide = function () {
       $ionicSlideBoxDelegate.next();
     };
