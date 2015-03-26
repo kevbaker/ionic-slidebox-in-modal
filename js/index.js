@@ -1,4 +1,4 @@
-angular.module('ionicApp', ['ionic'])
+angular.module('ionicApp', ['ionic', 'ionicApp.modal.controller'])
 
   .controller('AppCtrl', function ($scope, $ionicModal) {
 
@@ -14,8 +14,9 @@ angular.module('ionicApp', ['ionic'])
       focusFirstInput: true
     });
 
-  })
+  });
 
+angular.module('ionicApp.modal.controller', ['ionic'])
   .controller('ModalCtrl', function ($scope, $ionicSlideBoxDelegate) {
 
     $scope.newUser = {};
