@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Modal: 1.0.0-beta.11</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> 
+
+    <title>Ionic Modal</title>
+
+    <link href="http://code.ionicframework.com/1.0.0-beta.11/css/ionic.css" rel="stylesheet">
+    <script src="http://code.ionicframework.com/1.0.0-beta.11/js/ionic.bundle.js"></script>
+  </head>
+  <body ng-controller="AppCtrl">
+
+    <ion-header-bar class="bar-positive">
+      <h1 class="title">Contacts</h1>
+      <div class="buttons">
+        <button class="button button-icon ion-compose" ng-click="modal.show()">
+        </button>
+      </div>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="contact in contacts">
+          {{contact.name}}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+
+    <script id="modal.html" type="text/ng-template">
+      <ion-modal-view ng-controller="ModalCtrl">
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">New Contact</h1>
+          <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+        </ion-header-bar>
+       <ion-slide-box>
+         <ion-slide>
+           <ion-content>
+             <h1>slide 1</h1>
+           </ion-content>
+         </ion-slide>
+         <ion-slide>
+           <ion-content>
+             <h1>slide 2</h1>
+           </ion-content>
+         </ion-slide>
+         <ion-slide>
+           <ion-content>
+             <h1>slide 3</h1>
+           </ion-content>
+         </ion-slide>
+       </ion-slide-box>
+      </ion-modal-view>
+    </script>
+
+  </body>
+</html>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
