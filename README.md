@@ -8,7 +8,7 @@ This is an example Ionic app that embeds an `ion-slide-box` within an `ionicModa
 
 Specific library version used in this example.
 
-* 1.0.0-beta.11
+* 1.0.0-beta.14
 
 ## Key Concepts
 
